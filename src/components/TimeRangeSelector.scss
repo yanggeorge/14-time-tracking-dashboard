@@ -1,0 +1,24 @@
+.time-range-selector {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+}
+
+.time-range-btn {
+  background: none;
+  border: none;
+  color: var(--color-navy-200);
+  font: var(--text-preset5-regular);
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--color-white);
+  }
+
+  &.active {
+    color: var(--color-white);
+    font-weight: 500;
+  }
+}

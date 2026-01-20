@@ -1,0 +1,79 @@
+.card-wrapper {
+  width: 100%;
+}
+
+.card {
+  background-color: var(--color-navy-900);
+  border-radius: var(--spacing-300);
+  padding: var(--spacing-400);
+  position: relative;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    background-color: var(--color-navy-800);
+  }
+
+  &.work {
+    border-top: 4px solid var(--color-orange);
+  }
+
+  &.play {
+    border-top: 4px solid var(--color-blue-300);
+  }
+
+  &.study {
+    border-top: 4px solid var(--color-pink-400);
+  }
+
+  &.exercise {
+    border-top: 4px solid var(--color-green-400);
+  }
+
+  &.social {
+    border-top: 4px solid var(--color-purple-700);
+  }
+
+  &.self-care {
+    border-top: 4px solid var(--color-yellow-300);
+  }
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-400);
+}
+
+.card-title {
+  font: var(--text-preset5);
+  color: var(--color-white);
+}
+
+.card-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+
+  .card:hover & {
+    transform: scale(1.1);
+  }
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+}
+
+.current-time {
+  font: var(--text-preset1);
+  color: var(--color-white);
+}
+
+.previous-time {
+  font: var(--text-preset5-regular);
+  color: var(--color-navy-200);
+}
