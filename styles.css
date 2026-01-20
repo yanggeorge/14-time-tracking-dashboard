@@ -1,5 +1,5 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 :root {
   --color-white: hsl(0, 100%, 100%);
   --color-black: hsl(0, 0%, 0%);
@@ -23,7 +23,6 @@
   --color-pink-400: #ff5e7d;
   --color-green-400: #4bcf82;
   --color-yellow-300: #f1c75b;
-
   --text-preset1: 300 56px/66px "Rubik", sans-serif;
   --text-preset2: 300 40px/47px "Rubik", sans-serif;
   --text-preset3: 300 32px/38px "Rubik", sans-serif;
@@ -31,7 +30,6 @@
   --text-preset5: 500 18px/21px "Rubik", sans-serif;
   --text-preset5-regular: 400 18px/21px "Rubik", sans-serif;
   --text-preset6: 400 15px/18px "Rubik", sans-serif;
-
   --spacing-50: 0.25rem; /* 4px */
   --spacing-100: 0.5rem; /* 8px */
   --spacing-150: 0.75rem; /* 12px */
@@ -61,10 +59,8 @@ body {
   -webkit-font-smoothing: antialiased;
   /* 针对 Firefox (Mac) */
   -moz-osx-font-smoothing: grayscale;
-
   display: flex;
   justify-content: center;
-
   /* 这个强制居中不要用 */
   align-items: center;
   min-height: 100vh;
@@ -76,4 +72,4 @@ body {
 
 main {
   display: flex;
-}
+}/*# sourceMappingURL=styles.css.map */

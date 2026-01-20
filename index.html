@@ -1,74 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Time tracking dashboard</title>
 
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  Report for
-  Jeremy Robson
+  <main>
 
-  Daily
-  Weekly
-  Monthly
+    <div class="header">
+      <div class="profile">
+        <img src="/images/image-jeremy.png" alt="">
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+        <div class="content">
+          <p class="desc">Report for</p>
+          <p class="name">Jeremy Robson</p>
+        </div>
+      </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+      <div class="menu">
+        <div class="time-range">Daily</div>
+        <div class="time-range">Weekly</div>
+        <div class="time-range">Monthly</div>
+      </div>
+    </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+    <div class="cards">
+      <div class="card-wrapper">
+        <div class="card work">
+          <div class="card-header">
+            <p class="title">Work</p>
+            <img src="/images/icon-exercise.svg" alt="icon-exercise">
+          </div>
+          <div class="card-content">
+            <p class="current">5hr</p>
+            <p class="last">Last Day - 7hrs</p>
+          </div>
+        </div>
+      </div>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+      <div class="card-wrapper">
+        <div class="card play">
+          <div class="card-header">
+            <p class="title">Play</p>
+            <img src="/images/icon-exercise.svg" alt="icon-exercise">
+          </div>
+          <div class="card-content">
+            <p class="current">5hr</p>
+            <p class="last">Last Day - 7hrs</p>
+          </div>
+        </div>
+      </div>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+      <div class="card-wrapper">
+        <div class="card study">
+          <div class="card-header">
+            <p class="title">Study</p>
+            <img src="/images/icon-exercise.svg" alt="icon-exercise">
+          </div>
+          <div class="card-content">
+            <p class="current">5hr</p>
+            <p class="last">Last Day - 7hrs</p>
+          </div>
+        </div>
+      </div>
 
-  
-  
+      <div class="card-wrapper">
+        <div class="card exercise">
+          <div class="card-header">
+            <p class="title">Exercise</p>
+            <img src="/images/icon-exercise.svg" alt="icon-exercise">
+          </div>
+          <div class="card-content">
+            <p class="current">5hr</p>
+            <p class="last">Last Day - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="card social">
+          <p class="title">Social</p>
+          <div class="card-content">
+            <p class="current">5hr</p>
+            <p class="last">Last Day - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="card self-care">
+          <div class="card-header">
+            <p class="title">Self Care</p>
+            <img src="/images/icon-exercise.svg" alt="icon-exercise">
+          </div>
+          <div class="card-content">
+            <p class="current">5hr</p>
+            <p class="last">Last Day - 7hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/script.js"></script>
 </body>
+
 </html>
