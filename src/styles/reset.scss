@@ -133,3 +133,38 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* 针对所有按钮的深度重置 */
+button {
+  /* 1. 消除边距和内边距 */
+  margin: 0;
+  padding: 0;
+
+  /* 2. 消除背景和边框，让它看起来像普通文本 */
+  background: transparent;
+  border: none;
+  outline: none;
+
+  /* 3. 强制继承父元素的文本属性 */
+  /* 这一步很重要，否则按钮默认会使用系统字体，而不是你定义的 Rubik */
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-align: inherit;
+
+  /* 4. 逻辑属性清零（防止现代浏览器残留样式） */
+  padding-inline: 0;
+  padding-block: 0;
+
+  /* 5. 交互体验优化 */
+  cursor: pointer; /* 鼠标移上去显示小手 */
+  user-select: none; /* 防止频繁点击时意外选中文字 */
+
+  /* 6. 解决移动端点击高亮 */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 兼容性补充：针对 disabled 状态 */
+button:disabled {
+  cursor: not-allowed;
+}

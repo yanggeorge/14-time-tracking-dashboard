@@ -8,6 +8,7 @@
 }
 
 .profile {
+  width: 327px;
   display: flex;
   align-items: center;
   padding: var(--spacing-400);
@@ -41,13 +42,14 @@
 
 @media (min-width: 768px) {
   .header {
-    min-height: 400px;
+    height: 203px;
+    align-items: center;
   }
 
   .profile {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--spacing-300);
+    width: 612px;
+    padding-top: 34.5px;
+    padding-bottom: 34.5px;
   }
 }
 

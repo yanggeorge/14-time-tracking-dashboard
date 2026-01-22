@@ -21,3 +21,9 @@
     color: var(--color-white);
   }
 }
+
+@media (min-width: 768px) {
+  .time-range-btn {
+    width: 109px;
+  }
+}
