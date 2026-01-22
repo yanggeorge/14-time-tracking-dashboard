@@ -3,6 +3,13 @@
   border-radius: var(--spacing-300);
   transition: transform 0.2s ease;
 
+  overflow: hidden;
+  background-image: var(--icon-url);
+  background-repeat: no-repeat;
+
+  // 控制图标位置：右侧 15px，上方 -5px（向上偏移产生裁剪效果）
+  background-position: top -5px right 15px;
+
   &.work {
     background-color: var(--color-orange);
   }

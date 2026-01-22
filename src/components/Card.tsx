@@ -25,9 +25,15 @@ const Card: React.FC<CardProps> = ({ activity, timeframe, previousLabel }) => {
   const getActivityClass = (): string => {
     return activity.title.toLowerCase().replace(" ", "-");
   };
-
   return (
-    <div className={`card-wrapper ${getActivityClass()}`}>
+    <div
+      className={`card-wrapper ${getActivityClass()}`}
+      style={
+        {
+          "--icon-url": `url(${getIconPath()})`,
+        } as React.CSSProperties
+      }
+    >
       <div className="card">
         <div className="card-header">
           <h3 className="card-title">{activity.title}</h3>
