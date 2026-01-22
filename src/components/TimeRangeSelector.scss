@@ -23,7 +23,17 @@
 }
 
 @media (min-width: 768px) {
-  .time-range-btn {
-    width: 109px;
+  .time-range-selector {
+    width: 327px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .time-range-selector {
+    flex-direction: column;
+    width: 68px;
+    height: 106px;
+    margin-left: 32px;
+    align-items: flex-start;
   }
 }
