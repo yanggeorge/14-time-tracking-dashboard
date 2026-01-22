@@ -1,16 +1,16 @@
 .time-range-selector {
   display: flex;
-  flex-direction: column;
-  gap: var(--spacing-200);
+  justify-content: space-around;
+  gap: 0px;
 }
 
 .time-range-btn {
   background: none;
   border: none;
-  color: var(--color-navy-200);
+  color: var(--color-purple-500);
   font: var(--text-preset5-regular);
   cursor: pointer;
-  text-align: left;
+  text-align: center;
   transition: color 0.2s ease;
 
   &:hover {
@@ -19,6 +19,5 @@
 
   &.active {
     color: var(--color-white);
-    font-weight: 500;
   }
 }

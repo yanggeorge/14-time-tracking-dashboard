@@ -1,13 +1,16 @@
-import React from 'react'
-import TimeRangeSelector from './TimeRangeSelector'
-import './Header.scss'
+import React from "react";
+import TimeFrameSelector from "./TimeRangeSelector";
+import "./Header.scss";
 
 interface HeaderProps {
-  selectedTimeframe: 'daily' | 'weekly' | 'monthly'
-  onTimeframeChange: (timeframe: 'daily' | 'weekly' | 'monthly') => void
+  selectedTimeframe: "daily" | "weekly" | "monthly";
+  onTimeframeChange: (timeframe: "daily" | "weekly" | "monthly") => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ selectedTimeframe, onTimeframeChange }) => {
+const Header: React.FC<HeaderProps> = ({
+  selectedTimeframe,
+  onTimeframeChange,
+}) => {
   return (
     <div className="header">
       <div className="profile">
@@ -17,9 +20,12 @@ const Header: React.FC<HeaderProps> = ({ selectedTimeframe, onTimeframeChange })
           <p className="profile-name">Jeremy Robson</p>
         </div>
       </div>
-      <TimeRangeSelector selected={selectedTimeframe} onSelect={onTimeframeChange} />
+      <TimeFrameSelector
+        selected={selectedTimeframe}
+        onSelect={onTimeframeChange}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -52,14 +52,8 @@ html,
 body {
   font-family: "Rubik", sans-serif;
   letter-spacing: 0;
-  background-color: var(--color-white);
+  background-color: var(--color-navy-950);
+  color: var(--color-white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

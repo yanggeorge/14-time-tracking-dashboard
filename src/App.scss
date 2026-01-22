@@ -1,19 +1,15 @@
-.app {
-  width: 100%;
+#root {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: var(--spacing-200);
-  background-color: var(--color-navy-950);
 }
 
 .dashboard {
+  width: 327px;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-300);
-  max-width: var(--spacing-1400);
-  width: 100%;
 }
 
 @media (min-width: 1440px) {

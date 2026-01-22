@@ -1,24 +1,24 @@
-import React from 'react'
-import Card from './Card'
-import { Activity, Timeframe } from '../types'
-import './CardsGrid.scss'
+import React from "react";
+import Card from "./Card";
+import { Activity, Timeframe } from "../types";
+import "./CardsGrid.scss";
 
 interface CardsGridProps {
-  activities: Activity[]
-  timeframe: Timeframe
+  activities: Activity[];
+  timeframe: Timeframe;
 }
 
 const CardsGrid: React.FC<CardsGridProps> = ({ activities, timeframe }) => {
   const getPreviousLabel = (): string => {
     switch (timeframe) {
-      case 'daily':
-        return 'Yesterday'
-      case 'weekly':
-        return 'Last Week'
-      case 'monthly':
-        return 'Last Month'
+      case "daily":
+        return "Last Day";
+      case "weekly":
+        return "Last Week";
+      case "monthly":
+        return "Last Month";
     }
-  }
+  };
 
   return (
     <div className="cards-grid">
@@ -31,7 +31,7 @@ const CardsGrid: React.FC<CardsGridProps> = ({ activities, timeframe }) => {
         />
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default CardsGrid
+export default CardsGrid;
